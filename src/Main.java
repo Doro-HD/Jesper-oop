@@ -3,12 +3,10 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        //Objekter
-        Car car = new Car();
-        Bike bike = new Bike();
+        ControlSystem controlSystem = new ControlSystem();
 
-        vehicularTest(car);
-        vehicularTest(bike);
+        Car car = new Car(controlSystem, "Toyota", "Corolla");
+        Bike bike = new Bike(controlSystem);
 
     }
 
